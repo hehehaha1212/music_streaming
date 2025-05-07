@@ -29,10 +29,6 @@ const Footer = () => {
             <li>Himesh Reshammiya</li>
             <li>Lata Mangeshkar</li>
             <li>Diljit Dosanjh</li>
-            <li>Ed Sheeran</li>
-            <li>Shreya Ghoshal</li>
-            <li>Sanam Puri</li>
-            <li>Armaan Malik</li>
           </ul>
         </div>
 
@@ -46,11 +42,6 @@ const Footer = () => {
             <li>Gaytri Mantra</li>
             <li>Mata Ke Bhajan</li>
             <li>Durga Chalisa</li>
-            <li>Maiya Yashoda</li>
-            <li>Bhakti Geet</li>
-            <li>Shiv Bhajan</li>
-            <li>Sunder Kand</li>
-            <li>Ram Bhajan</li>
           </ul>
         </div>
 

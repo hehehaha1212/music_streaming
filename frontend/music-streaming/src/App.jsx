@@ -1,24 +1,20 @@
 import React from 'react';
-import MusicSection from './components/MusicSection';
-import Header from './components/Header';
-import './styles/App.css'
-import TopArtists from './components/TopArtists';
-import DoseofLove from './sections/DoseofLove';
-import International from './sections/International';
-import Devotional from './sections/Devotional';
-import Footer from './components/Footer';
+import Home from './pages/Home';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import About from './pages/AboutUs';
+import './styles/App.css';
+import AbooutUs from './pages/AboutUs';
 
 function App() {
   return (
-    <>
-      <Header />
-      <DoseofLove/>
-      <TopArtists sectionTitle = "Top Artists"/>
-      <International/>
-      <Devotional/>
-      <Footer/>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </Router>
   );
 }
 
 export default App;
+
