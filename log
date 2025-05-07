@@ -1,0 +1,11 @@
+will be replacing use of cloudinary with firebase for faster
+and recommended cloud storage for auth and audio data
+cloudinary env creds
+name
+api key
+api secret
+api enviorment variable
+
+
+albums->artists
+no library component
