@@ -62,14 +62,19 @@ import ekJaisaHaalTeraMera from './Ek Jaisa Haal Tera Mera - PagalWorld.mp3';
 import fellForYou from './Fell For You - PagalWorld.mp3';
 import huaMain from './Hua Main x Finding Her - PagalWorld.mp3';
 import ishqHai from './song2.mp3';
-import jhol from './song2.mp3';
 import kailashKherTeriDeewani from './song2.mp3';
 import maand from './song2.mp3';
 import mainShivKaHu from './song2.mp3';
 import nainaJoMileHai from './Naina Jo Mile Hai Sarkar Se - PagalWorld.mp3';
 import song1 from './song1.mp3';
 import song2 from './song2.mp3';
+import jhol from './jhol.mp3';
+import sanamre from './sanamre.mp3';
+import bulleya from './bulleya.mp3';
+import khairiyat from './khairiyat.mp3';
+import mastMagan from './mastmagan.mp3';
 import img8 from './img8.jpg';
+
 
 // Exporting all assets
 export const assets = {
@@ -137,13 +142,17 @@ export const assets = {
     fellForYou,
     huaMain,
     ishqHai,
-    jhol,
     kailashKherTeriDeewani,
     maand,
     mainShivKaHu,
     nainaJoMileHai,
     song1,
     song2,
+    jhol,
+    sanamre,
+    bulleya,
+    khairiyat,
+    mastMagan,
   },
 };
 
@@ -173,7 +182,6 @@ export const albumData = [
 
 export const songData = [
   {
-    blah:"blah",
     id: 0,
     name: "Aaye Gaye Raghunandan",
     image: assets.images.devotional.ram, // Correct devotional image
@@ -261,7 +269,7 @@ export const songData = [
     id: 9,
     name: "Song Five",
     image: assets.images.reactLogo, // Use a placeholder image
-    file: assets.songs.song,
+    file: assets.songs.song1,
     desc: "Put a smile on your face with these happy tunes",
     duration: "3:10",
   },

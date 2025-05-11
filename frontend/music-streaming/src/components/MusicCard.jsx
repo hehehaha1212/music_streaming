@@ -8,22 +8,16 @@ const MusicCard = ({ title, image, file, artist, duration }) => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    setCurrentSong({ 
-      title:title || "Unknown Title",
-      image:image || null,
-      file:file || null,
+    console.log({ title, image, file, artist, duration }); 
+    setCurrentSong({
+      title: title || "Unknown Title",
+      image: image || "/default-image.png",
+      file: file || null,
       artist: artist || "Unknown Artist",
-      duration: duration || "Unknown Duration"
+      duration: duration || "Unknown Duration",
     });
     navigate('/player');
-    
-    console.log({
-      title,
-      image,
-      file,
-      artist,
-      duration,
-    });
+
   };
 
   return (
