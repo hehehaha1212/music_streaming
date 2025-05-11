@@ -1,4 +1,3 @@
-import React from 'react';
 import Home from './pages/Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import About from './pages/AboutUs';
@@ -14,9 +13,9 @@ function App() {
     <SongProvider>
       <BrowserRouter>
         <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/Player" element= {<Player/>} />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/Player" element={<Player />} />
         </Routes>
       </BrowserRouter>
     </SongProvider>

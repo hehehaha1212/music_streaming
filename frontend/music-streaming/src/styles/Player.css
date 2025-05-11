@@ -9,6 +9,36 @@
     padding-bottom: 60px;
   }
   
+  .no-song-message {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .no-song-message h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  
+  .no-song-message p {
+    color: #cbd5e1;
+    margin-bottom: 24px;
+  }
+  
+  .back-button {
+    background: #005de0;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .back-button:hover {
+    background: #0047b3;
+  }
+  
   .song-info {
     text-align: center;
     margin: 1.5rem 0 1rem;
@@ -17,6 +47,12 @@
   .song-info h2 {
     font-size: 1.5rem;
     font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .song-info h3 {
+    font-size: 1.1rem;
+    color: #cbd5e1;
   }
   
   .song-info .hindi-text {
@@ -36,15 +72,17 @@
     margin: 1.5rem 0;
     border: 4px solid white;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-    padding-top: 0px;
+    transition: transform 0.3s ease;
+  }
+  
+  .cover-image:hover {
+    transform: scale(1.02);
   }
   
   .cover-image img {
-    display: flex;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    padding-top: 0px;
   }
   
   .time-display {
@@ -53,7 +91,6 @@
     width: 500px;
     font-size: 0.875rem;
     color: #cbd5e1;
-
     padding-top: 70px;
     padding-bottom: 0px;
   }
@@ -65,13 +102,15 @@
     border-radius: 9999px;
     margin: 0.5rem 0 1.5rem;
     overflow: hidden;
+    cursor: pointer;
+    position: relative;
   }
   
   .seek-bar-filled {
-    width: 100%;
     height: 100%;
     background-color: white;
     border-radius: 9999px;
+    transition: width 0.1s linear;
   }
   
   .controls {
@@ -87,13 +126,17 @@
     width: 34px;
     height: 34px;
     cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .controls img:hover {
+    transform: scale(1.1);
   }
   
   .play-button {
-    width: 40px;
-    height: 40px;
+    width: 40px !important;
+    height: 40px !important;
   }
-  
   
   .footer-bar {
     position: fixed;
@@ -108,21 +151,29 @@
     font-size: 14px;
     font-weight: 500;
   }
-
-
+  
+  .footer-bar span {
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  .footer-bar span:hover {
+    color: #005de0;
+  }
+  
   .custom-divider {
     width: 80%;
     height: 2px;
-    background:linear-gradient(to right, #005de0, #980c98);
+    background: linear-gradient(to right, #005de0, #980c98);
     margin: 20px 0;
     opacity: 100%;
     padding-bottom: 1px;
   }
-
+  
   .custom-divider1 {
     width: 100%;
     height: 2px;
-    background:linear-gradient(to top, #005de0, #0c7c98);
+    background: linear-gradient(to top, #005de0, #0c7c98);
     margin: 20px 0;
     opacity: 100%;
     padding-bottom: 1px;
