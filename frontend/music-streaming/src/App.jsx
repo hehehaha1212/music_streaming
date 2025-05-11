@@ -1,20 +1,24 @@
-import React from 'react';
 import Home from './pages/Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import About from './pages/AboutUs';
 import './styles/App.css';
-import AbooutUs from './pages/AboutUs';
+import Player from './components/Player';
+import { BrowserRouter } from 'react-router-dom';
+
+
+import { SongProvider } from './context/SongContext';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-    </Router>
+    <SongProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/Player" element={<Player />} />
+        </Routes>
+      </BrowserRouter>
+    </SongProvider>
   );
 }
-
 export default App;
-
