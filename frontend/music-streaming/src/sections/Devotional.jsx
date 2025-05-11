@@ -12,8 +12,8 @@ const devotionalSongs = [
   { 
     name: "Deva Deva", 
     image: song1,
-    file: assets.songs.aayeGayeRaghunandan,
-    artist: "Arijit Singh",
+    file: assets.songs.song1,
+    artist: "artist1",
     duration: "4:15"
   },
   { 

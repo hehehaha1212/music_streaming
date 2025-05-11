@@ -64,7 +64,6 @@ import huaMain from './Hua Main x Finding Her - PagalWorld.mp3';
 import ishqHai from './song2.mp3';
 import kailashKherTeriDeewani from './song2.mp3';
 import maand from './song2.mp3';
-import mainShivKaHu from './song2.mp3';
 import nainaJoMileHai from './Naina Jo Mile Hai Sarkar Se - PagalWorld.mp3';
 import song1 from './song1.mp3';
 import song2 from './song2.mp3';
@@ -74,6 +73,10 @@ import bulleya from './bulleya.mp3';
 import khairiyat from './khairiyat.mp3';
 import mastMagan from './mastmagan.mp3';
 import img8 from './img8.jpg';
+import mainShivKaHu from './mainShivKaHu.mp3';
+import shrikrishna from './shrikrishna.mp3';
+import tumPremHo from './tumPremHo.mp3';
+
 
 
 // Exporting all assets
