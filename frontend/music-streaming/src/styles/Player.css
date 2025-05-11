@@ -1,0 +1,135 @@
+.audio-player-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, #031434, #041936);
+    color: white;
+    min-height: 100vh;
+    font-family: sans-serif;
+    padding-bottom: 60px;
+  }
+  
+  .song-info {
+    text-align: center;
+    margin: 1.5rem 0 1rem;
+  }
+  
+  .song-info h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .song-info .hindi-text {
+    font-weight: 400;
+  }
+  
+  .song-info p {
+    font-size: 0.875rem;
+    color: #cbd5e1;
+  }
+  
+  .cover-image {
+    width: 296px;
+    height: 296px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 1.5rem 0;
+    border: 4px solid white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    padding-top: 0px;
+  }
+  
+  .cover-image img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-top: 0px;
+  }
+  
+  .time-display {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    font-size: 0.875rem;
+    color: #cbd5e1;
+
+    padding-top: 70px;
+    padding-bottom: 0px;
+  }
+  
+  .seek-bar-bg {
+    width: 500px;
+    height: 4px;
+    background-color: #9ca3af;
+    border-radius: 9999px;
+    margin: 0.5rem 0 1.5rem;
+    overflow: hidden;
+  }
+  
+  .seek-bar-filled {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 9999px;
+  }
+  
+  .controls {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.7rem;
+    margin-bottom: 2rem;
+  }
+  
+  .controls img {
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+  }
+  
+  .play-button {
+    width: 40px;
+    height: 40px;
+  }
+  
+  
+  .footer-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #64748b;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+
+  .custom-divider {
+    width: 80%;
+    height: 2px;
+    background:linear-gradient(to right, #005de0, #980c98);
+    margin: 20px 0;
+    opacity: 100%;
+    padding-bottom: 1px;
+  }
+
+  .custom-divider1 {
+    width: 100%;
+    height: 2px;
+    background:linear-gradient(to top, #005de0, #0c7c98);
+    margin: 20px 0;
+    opacity: 100%;
+    padding-bottom: 1px;
+    padding-top: 0px;
+  }
+  
+  
+
+
+  
