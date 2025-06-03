@@ -1,8 +1,8 @@
 // App.jsx
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from "react-router-dom";
-import Signup from "./pages/signup_page"; // Fixed case sensitivity
-import Login from "./pages/login_page"; // Fixed case sensitivity
+import Signup from "./Pages/signup_page";
+import Login from "./Pages/login_page";
 import './styles/App.css';
 import Header from './components/Header';
 import TopArtists from './components/TopArtists';
