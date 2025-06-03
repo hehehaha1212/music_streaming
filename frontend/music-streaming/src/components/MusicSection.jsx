@@ -8,7 +8,15 @@ const MusicSection = ({ title, songs }) => {
       <h2>{title}</h2>
       <div className="music-cards-container">
         {songs.map((song, index) => (
-          <MusicCard key={index} title={song.title} image={song.image} />
+          <MusicCard
+          key={index}
+          title={song.name}
+          image={song.image}
+          file={song.file}
+          artist={song.artist}
+          duration={song.duration}
+        />
+        
         ))}
       </div>
     </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import MusicSection from '../components/MusicSection';
+import { assets } from '../assets/assets';
 
 import song1 from '../assets/devotional/deva.png';
 import song2 from '../assets/devotional/durga.png';
@@ -8,11 +9,41 @@ import song4 from '../assets/devotional/ram.png';
 import song5 from '../assets/devotional/siya.png';
 
 const devotionalSongs = [
-  { title: "Deva Deva", image: song1 },
-  { title: "Aigiri Nandini", image: song2 },
-  { title: "Tum Prem Ho", image: song3 },
-  { title: "Ram Aayenge", image: song4 },
-  { title: "Ram Siya Ram", image: song5 }
+  { 
+    name: "Deva Deva", 
+    image: song1,
+    file: assets.songs.song1,
+    artist: "artist1",
+    duration: "4:15"
+  },
+  { 
+    name: "Aigiri Nandini", 
+    image: song2,
+    file: assets.songs.aeMereWatanKeLogon,
+    artist: "Traditional",
+    duration: "5:30"
+  },
+  { 
+    name: "Tum Prem Ho", 
+    image: song3,
+    file: assets.songs.dieWithASmile,
+    artist: "Krishna Das",
+    duration: "6:20"
+  },
+  { 
+    name: "Ram Aayenge", 
+    image: song4,
+    file: assets.songs.ekJaisaHaalTeraMera,
+    artist: "Traditional",
+    duration: "4:45"
+  },
+  {
+    name: "Ram Siya Ram", 
+    image: song5,
+    file: assets.songs.fellForYou,
+    artist: "Traditional",
+    duration: "3:55"
+  }
 ];
 
 const Devotional = () => {

@@ -1,8 +1,13 @@
 // App.jsx
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from "react-router-dom";
+
 import Signup from "./Pages/signup_page";
 import Login from "./Pages/login_page";
+import Home from './pages/Home';
+import About from './pages/AboutUs';
+import Player from './components/Player';
+
 import './styles/App.css';
 import Header from './components/Header';
 import TopArtists from './components/TopArtists';
@@ -10,6 +15,8 @@ import DoseofLove from './sections/DoseofLove';
 import International from './sections/International';
 import Devotional from './sections/Devotional';
 import Footer from './components/Footer';
+
+import { SongProvider } from './context/SongContext';
 
 function MusicDashboard() {
   return (
@@ -40,6 +47,9 @@ function LayoutWrapper() {
         </>
       )}
       <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/Player" element={<Player />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<MusicDashboard />} />
@@ -51,9 +61,11 @@ function LayoutWrapper() {
 
 function App() {
   return (
-    <Router>
-      <LayoutWrapper />
-    </Router>
+    <SongProvider>
+      <Router>
+        <LayoutWrapper />
+      </Router>
+    </SongProvider>
   );
 }
 

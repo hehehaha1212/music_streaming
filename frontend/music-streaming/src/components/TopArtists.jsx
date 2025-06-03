@@ -1,11 +1,9 @@
 import React from 'react';
 import '../styles/TopArtists.css';
-
 import arijit from '../assets/artists/arijit.png';
 import taylor from '../assets/artists/taylor.png';
 import karan from '../assets/artists/karan.png';
 import atif from '../assets/artists/atif.png';
-// import shreya from '../assets/artists/shreya.png';
 import justin from '../assets/artists/justin.png';
 
 const artists = [
@@ -14,7 +12,6 @@ const artists = [
   { name: "Karan Aujla", image: karan },
   { name: "Atif Aslam", image: atif },
   {name: "Justin Bieber", image: justin},
-  // {name: "Shreya Ghoshal", image: shreya}
 ];
 
 const TopArtists = ({sectionTitle}) => {
